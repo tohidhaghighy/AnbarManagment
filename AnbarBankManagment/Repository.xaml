@@ -1,0 +1,139 @@
+﻿<Window x:Class="AnbarBankManagment.Repository"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AnbarBankManagment"
+        mc:Ignorable="d"
+        xmlns:PersianDateControls="clr-namespace:Arash.PersianDateControls;assembly=PersianDateControls"
+        Title="انبار نمایندگی" Height="600" Width="900" WindowStartupLocation="CenterScreen" WindowStyle="None" Background="Transparent" AllowsTransparency="True" Loaded="Window_Loaded" Activated="Window_Activated" ResizeMode="NoResize" Icon="img/anbar.png">
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="Loaded">
+            <BeginStoryboard>
+                <Storyboard Duration="00:00:03" Storyboard.TargetProperty="Opacity">
+                    <DoubleAnimation From="0" To="1"/>
+
+
+                </Storyboard>
+
+            </BeginStoryboard>
+
+
+        </EventTrigger>
+
+
+    </Window.Triggers>
+
+    <Grid>
+
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="480" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="780" RadiusX="10" RadiusY="10"/>
+        <Image HorizontalAlignment="Left" Source="img/Background.png" Height="529" Margin="10,61,0,0" VerticalAlignment="Top" Width="890" Stretch="Fill"/>
+        <Rectangle HorizontalAlignment="Left" Height="41" Margin="639,52,0,0" RadiusY="10" RadiusX="10" Stroke="#FF4D82B1" VerticalAlignment="Top" Width="197">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFEDF8FF" Offset="1"/>
+                    <GradientStop Color="White"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+
+
+        <Label Content="دستگاه های دریافتی" HorizontalAlignment="Left" Margin="594,19,0,0" VerticalAlignment="Top" Width="134" FontFamily="B Yekan" FontSize="16"/>
+        <Label Content=" : تعداد کل دستگاه ها  " HorizontalAlignment="Left" Margin="715,61,0,0" VerticalAlignment="Top"/>
+        <Label Content="120000  " HorizontalAlignment="Left" Margin="655,62,0,0" VerticalAlignment="Top"/>
+
+
+        <DataGrid HorizontalAlignment="Left" Height="371" Margin="24,205,0,0" VerticalAlignment="Top" Width="866">
+            <DataGrid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFE6EEE3" Offset="0"/>
+                    <GradientStop Color="#FF9BF182" Offset="1"/>
+                    <GradientStop Color="#99C7FBB7" Offset="0.909"/>
+                </LinearGradientBrush>
+            </DataGrid.Background>
+        </DataGrid>
+
+        <Rectangle HorizontalAlignment="Left" Height="100" Margin="25,100,0,0" RadiusY="15" RadiusX="15" Stroke="#FFB7B7B7" VerticalAlignment="Top" Width="865"/>
+        <Label Content=":از تاریخ" HorizontalAlignment="Left" Margin="823,121,0,0" VerticalAlignment="Top"/>
+        <Label Content=":تا تاریخ" HorizontalAlignment="Left" Margin="823,144,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" x:Name="txthesab" Height="23" Margin="427,111,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="160" />
+        <TextBox HorizontalAlignment="Left" x:Name="txtshakhs" Height="23" Margin="427,140,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="160"/>
+        <Image HorizontalAlignment="Left" Source="img/Search-Search-icon.png" Cursor="Hand" Height="21" Margin="683,148,0,0" VerticalAlignment="Top" Width="19" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-82.701"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <PersianDateControls:PersianDatePicker HorizontalAlignment="Left" x:Name="txtdate1" Margin="709,123,0,0" VerticalAlignment="Top" Width="103"/>
+        <PersianDateControls:PersianDatePicker HorizontalAlignment="Left" x:Name="txtdate2" Margin="709,148,0,0" VerticalAlignment="Top" Width="103"/>
+        <Image HorizontalAlignment="Left" Source="img/Search-Search-icon.png" Cursor="Hand" Height="21" Margin="400,112,0,0" VerticalAlignment="Top" Width="19" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-82.701"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Source="img/Search-Search-icon.png" Cursor="Hand" Height="21" Margin="400,141,0,0" VerticalAlignment="Top" Width="19" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-82.701"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <TextBox HorizontalAlignment="Left" x:Name="txtshakhs_Copy" Height="23" Margin="428,168,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="160"/>
+        <Image HorizontalAlignment="Left" Source="img/Search-Search-icon.png" Cursor="Hand" Height="21" Margin="401,169,0,0" VerticalAlignment="Top" Width="19" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-82.701"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Label Content=": مدل" HorizontalAlignment="Left" Margin="603,108,0,0" VerticalAlignment="Top"/>
+        <Label Content=": سریال" HorizontalAlignment="Left" Margin="594,138,0,0" VerticalAlignment="Top"/>
+        <Label Content=": ترمینال " HorizontalAlignment="Left" Margin="590,166,0,0" VerticalAlignment="Top"/>
+        <Rectangle HorizontalAlignment="Left" Height="41" Margin="373,52,0,0" RadiusY="10" RadiusX="10" Stroke="#FF4D82B1" VerticalAlignment="Top" Width="197">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFEDF8FF" Offset="1"/>
+                    <GradientStop Color="White"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label Content=" : دستگاه اماده به کار  " HorizontalAlignment="Left" Margin="449,61,0,0" VerticalAlignment="Top"/>
+        <Label Content="120000  " HorizontalAlignment="Left" Margin="389,62,0,0" VerticalAlignment="Top"/>
+        <Rectangle HorizontalAlignment="Left" Height="41" Margin="93,52,0,0" RadiusY="10" RadiusX="10" Stroke="#FF4D82B1" VerticalAlignment="Top" Width="197">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFEDF8FF" Offset="1"/>
+                    <GradientStop Color="White"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label Content=" : تجهیزات اماده به کار  " HorizontalAlignment="Left" Margin="169,61,0,0" VerticalAlignment="Top"/>
+        <Label Content="120000  " HorizontalAlignment="Left" Margin="109,62,0,0" VerticalAlignment="Top"/>
+        <Label Content=" انبار نمایندگی  " HorizontalAlignment="Left" Margin="414,16,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="B Nazanin" FontWeight="Bold" Width="180"/>
+        <Rectangle HorizontalAlignment="Left" Height="51" Margin="10,10,0,0" RadiusY="10" RadiusX="10" Stroke="#FFB1B1B1" VerticalAlignment="Top" x:Name="Header" Width="890" MouseDown="Header_MouseDown">
+
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="img/HeaderBack.png"/>
+
+            </Rectangle.Fill>
+
+        </Rectangle>
+
+        <Image Name="btnback" HorizontalAlignment="Left" Source="img/closeicon.png" Opacity="0.5" Height="27" Margin="37,23,0,0" VerticalAlignment="Top" Width="23" MouseDown="Back_MouseDown" Cursor="Hand"/>
+    </Grid>
+</Window>

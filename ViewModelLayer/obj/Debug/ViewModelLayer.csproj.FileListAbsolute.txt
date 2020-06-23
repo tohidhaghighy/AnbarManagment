@@ -1,0 +1,6 @@
+C:\Users\tohid\Source\Repos\AnbarBankManagment\ViewModelLayer\bin\Debug\ViewModelLayer.dll
+C:\Users\tohid\Source\Repos\AnbarBankManagment\ViewModelLayer\bin\Debug\ViewModelLayer.pdb
+C:\Users\tohid\Source\Repos\AnbarBankManagment\ViewModelLayer\obj\Debug\ViewModelLayer.csprojAssemblyReference.cache
+C:\Users\tohid\Source\Repos\AnbarBankManagment\ViewModelLayer\obj\Debug\ViewModelLayer.csproj.CoreCompileInputs.cache
+C:\Users\tohid\Source\Repos\AnbarBankManagment\ViewModelLayer\obj\Debug\ViewModelLayer.dll
+C:\Users\tohid\Source\Repos\AnbarBankManagment\ViewModelLayer\obj\Debug\ViewModelLayer.pdb

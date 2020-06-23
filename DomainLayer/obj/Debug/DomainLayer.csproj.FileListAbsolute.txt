@@ -1,0 +1,14 @@
+C:\Users\tohid\Source\Repos\AnbarBankManagment\DomainLayer\bin\Debug\DomainLayer.dll
+C:\Users\tohid\Source\Repos\AnbarBankManagment\DomainLayer\bin\Debug\DomainLayer.pdb
+C:\Users\tohid\Source\Repos\AnbarBankManagment\DomainLayer\obj\Debug\DomainLayer.csproj.CoreCompileInputs.cache
+C:\Users\tohid\Source\Repos\AnbarBankManagment\DomainLayer\obj\Debug\DomainLayer.dll
+C:\Users\tohid\Source\Repos\AnbarBankManagment\DomainLayer\obj\Debug\DomainLayer.pdb
+C:\Users\tohid\Source\Repos\AnbarBankManagment\DomainLayer\bin\Debug\DomainLayer.dll.config
+C:\Users\tohid\Source\Repos\AnbarBankManagment\DomainLayer\bin\Debug\EntityFramework.dll
+C:\Users\tohid\Source\Repos\AnbarBankManagment\DomainLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\tohid\Source\Repos\AnbarBankManagment\DomainLayer\bin\Debug\EntityFramework.xml
+C:\Users\tohid\Source\Repos\AnbarBankManagment\DomainLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\tohid\Source\Repos\AnbarBankManagment\DomainLayer\obj\Debug\DomainLayer.csprojAssemblyReference.cache
+C:\Users\tohid\Source\Repos\AnbarBankManagment\DomainLayer\obj\Debug\DomainLayer.csproj.CopyComplete
+C:\Users\tohid\Source\Repos\AnbarBankManagment\DomainLayer\bin\Debug\Utilities.dll
+C:\Users\tohid\Source\Repos\AnbarBankManagment\DomainLayer\bin\Debug\Utilities.pdb

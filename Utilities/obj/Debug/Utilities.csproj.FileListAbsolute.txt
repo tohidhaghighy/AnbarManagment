@@ -1,0 +1,6 @@
+C:\Users\tohid\Source\Repos\AnbarBankManagment\Utilities\bin\Debug\Utilities.dll
+C:\Users\tohid\Source\Repos\AnbarBankManagment\Utilities\bin\Debug\Utilities.pdb
+C:\Users\tohid\Source\Repos\AnbarBankManagment\Utilities\obj\Debug\Utilities.csprojAssemblyReference.cache
+C:\Users\tohid\Source\Repos\AnbarBankManagment\Utilities\obj\Debug\Utilities.csproj.CoreCompileInputs.cache
+C:\Users\tohid\Source\Repos\AnbarBankManagment\Utilities\obj\Debug\Utilities.dll
+C:\Users\tohid\Source\Repos\AnbarBankManagment\Utilities\obj\Debug\Utilities.pdb

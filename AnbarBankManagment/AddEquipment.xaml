@@ -1,0 +1,54 @@
+﻿<Window x:Class="AnbarBankManagment.AddEquipment"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AnbarBankManagment"
+        mc:Ignorable="d"
+        Title="تجهیزات جدید" Height="310" WindowStartupLocation="CenterScreen" Width="470" AllowsTransparency="True" Background="Transparent" WindowStyle="None" Loaded="Window_Loaded" ResizeMode="NoResize">
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="Loaded">
+            <BeginStoryboard>
+                <Storyboard Duration="00:00:03" Storyboard.TargetProperty="Opacity">
+                    <DoubleAnimation From="0" To="1"/>
+
+
+                </Storyboard>
+
+            </BeginStoryboard>
+
+
+        </EventTrigger>
+
+
+    </Window.Triggers>
+
+
+    <Grid>
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="380" Margin="10,10,0,0" RadiusY="10" RadiusX="10" Stroke="#FFBCBCBC" VerticalAlignment="Top" Width="450"/>
+        <Image HorizontalAlignment="Left" Opacity="0.3" Source="img/back2.png" Height="234" Margin="10,56,0,0" VerticalAlignment="Top" Width="450"/>
+        <Rectangle HorizontalAlignment="Left" Height="46" Margin="10,10,0,0" RadiusY="20" RadiusX="10" Stroke="#FFC7C7C7" VerticalAlignment="Top" Width="450" MouseDown="Header_MouseDown">
+
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="img/header2.png"/>
+            </Rectangle.Fill>
+
+        </Rectangle>
+        <Image Name="btnback" HorizontalAlignment="Left" Height="11" Cursor="Hand" Source="img/closeicon.png" Opacity="0.5" Margin="53,30,0,0" VerticalAlignment="Top" Width="13" MouseDown="Back_MouseDown"/>
+        <Label Content="افزودن تجهیزات" HorizontalAlignment="Left" Margin="317,16,0,0" VerticalAlignment="Top" FontFamily="B Nazanin" FontSize="14" FontWeight="Bold"/>
+        <Rectangle Fill="#FFF4F4F4" HorizontalAlignment="Left" Height="56" Margin="9,257,0,-3" RadiusY="10" RadiusX="10" Stroke="#FFC2C2C2" VerticalAlignment="Top" Width="450" MouseDown="Header_MouseDown"/>
+        <Button Name="btnequipmentadd" Content="ثبت" IsDefault="True" TabIndex="5" HorizontalAlignment="Left" Margin="345,273,0,0" VerticalAlignment="Top" Width="75" Height="25" Background="#FFC0C02D" Foreground="White" Click="Btnequipmentadd_Click"/>
+        <Button Content="انصراف" IsCancel="True" TabIndex="6" HorizontalAlignment="Left" Margin="265,273,0,0" VerticalAlignment="Top" Width="75" Height="25"/>
+        <Label Content=" شماره اموال *" HorizontalAlignment="Left" FlowDirection="RightToLeft" Margin="330,99,0,0" VerticalAlignment="Top" FontFamily="B Nazanin" FontSize="14" FontWeight="Bold"/>
+        <Label Content=" * شماره سریال " HorizontalAlignment="Left" Margin="325,130,0,0" VerticalAlignment="Top" FontFamily="B Nazanin" FontSize="14" FontWeight="Bold"/>
+        <Label Content=" * مدل دستگاه " HorizontalAlignment="Left" Margin="328,161,0,0" VerticalAlignment="Top" FontFamily="B Nazanin" FontSize="14" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" TextAlignment="Center" Name="txtamval" TabIndex="1" FlowDirection="RightToLeft" Height="23" Margin="119,101,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="156"/>
+        <TextBox HorizontalAlignment="Left" TextAlignment="Center" Name="txtserial" TabIndex="2" FlowDirection="RightToLeft" Height="23" Margin="119,133,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="156"/>
+        <TextBox HorizontalAlignment="Left" TextAlignment="Center" Name="txtmodel" TabIndex="3" FlowDirection="RightToLeft" Height="23" Margin="119,163,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="156"/>
+        <Label Content=" نام تجهیزات *" HorizontalAlignment="Left" FlowDirection="RightToLeft" Margin="330,68,0,0" VerticalAlignment="Top" FontFamily="B Nazanin" FontSize="14" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" TextAlignment="Center" Name="txtnameequipment" TabIndex="0" FlowDirection="RightToLeft" Height="23" Margin="119,70,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="156"/>
+        <Label Content="نوع تجهیزات" HorizontalAlignment="Left" Margin="337,191,0,0" VerticalAlignment="Top" FontFamily="B Nazanin" FontSize="14" FontWeight="Bold"/>
+        <Label Content="موارد ستاره دار نباید خالی بماند" HorizontalAlignment="Left" Margin="167,221,0,0" VerticalAlignment="Top" FontFamily="B Nazanin" Foreground="#FFFF1414" FontSize="14" FontWeight="Bold"/>
+        <ComboBox HorizontalAlignment="Left" HorizontalContentAlignment="Center" Name="EquipmentType" TabIndex="4" FlowDirection="RightToLeft" Margin="119,195,0,0" VerticalAlignment="Top" Width="156"/>
+    </Grid>
+</Window>
