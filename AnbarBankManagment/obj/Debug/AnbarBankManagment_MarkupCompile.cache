@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\tohid\Source\Repos\AnbarBankManagment\AnbarBankManagment\App.xaml
-11-1938161782
+15909032131
 
-12-224259073
-27-320518615
-AddDevice.xaml;AddEquipment.xaml;DeviceList.xaml;ListEquipment.xaml;Login.xaml;MainWindow.xaml;Repository.xaml;Theme\BubbleCreme.xaml;Theme\ShinyDarkPurple.xaml;Theme\ShinyDarkTeal.xaml;Theme\TwilightBlue.xaml;
+161982359219
+27520355962
+AddDevice.xaml;AddDeviceType.xaml;AddEquipment.xaml;AddUser.xaml;DeviceList.xaml;DeviceTypeList.xaml;ListEquipment.xaml;ListUser.xaml;Login.xaml;MainWindow.xaml;Repository.xaml;Theme\BubbleCreme.xaml;Theme\ShinyDarkPurple.xaml;Theme\ShinyDarkTeal.xaml;Theme\TwilightBlue.xaml;
 
 False
 

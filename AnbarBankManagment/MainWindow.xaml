@@ -104,12 +104,12 @@
 
                 <ribbon:RibbonGroup >
 
-                    <ribbon:RibbonButton Label="ثبت شخص جدید" LargeImageSource="img/4.ico" FontFamily="B Nazanin" FontSize="14"/>
+                    <ribbon:RibbonButton Name="userlist" Label="لیست کاربران" LargeImageSource="img/4.ico" FontFamily="B Nazanin" FontSize="14" Click="Userlist_Click"/>
 
                 </ribbon:RibbonGroup>
                 <ribbon:RibbonGroup >
 
-                    <ribbon:RibbonButton Label="انواع تجهیزات" LargeImageSource="img/4.ico" FontFamily="B Nazanin" FontSize="14"/>
+                    <ribbon:RibbonButton Name="devicetypelist" Label="انواع تجهیزات" LargeImageSource="img/4.ico" FontFamily="B Nazanin" FontSize="14" Click="Devicetypelist_Click"/>
 
                 </ribbon:RibbonGroup>
 

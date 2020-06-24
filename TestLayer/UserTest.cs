@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using DomainLayer;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ServiceLayer.Repository;
-using System.Data.Entity;
 
 namespace TestLayer
 {
@@ -15,7 +14,6 @@ namespace TestLayer
         [TestMethod]
         public async void AddItem()
         {
-            var mockSet = new Mock<ISet<User>>();
             var find=await _user.Add(new User()
             {
                 Name="tohid",

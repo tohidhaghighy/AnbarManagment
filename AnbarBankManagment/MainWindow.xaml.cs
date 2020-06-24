@@ -108,5 +108,17 @@ namespace AnbarBankManagment
             Repository rep = new Repository();
             rep.ShowDialog();
         }
+
+        private void Userlist_Click(object sender, RoutedEventArgs e)
+        {
+            ListUser user = new ListUser();
+            user.ShowDialog();
+        }
+
+        private void Devicetypelist_Click(object sender, RoutedEventArgs e)
+        {
+            AddDeviceType device = new AddDeviceType();
+            device.ShowDialog();
+        }
     }
 }

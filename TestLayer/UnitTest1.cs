@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
+using DomainLayer;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Moq;
 
 namespace TestLayer
 {
@@ -12,7 +14,7 @@ namespace TestLayer
         public static List<int> GetListOfIntItems(int numberOfItems)
         {
             List<int> res = new List<int>();
-
+            var mock = new Mock<User>();
             for (int i = 0; i < numberOfItems; i++)
                 res.Add(i);
 

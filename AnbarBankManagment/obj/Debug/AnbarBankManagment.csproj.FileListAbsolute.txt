@@ -50,8 +50,13 @@ C:\Users\tohid\Source\Repos\AnbarBankManagment\AnbarBankManagment\obj\Debug\AddE
 C:\Users\tohid\Source\Repos\AnbarBankManagment\AnbarBankManagment\obj\Debug\ListEquipment.baml
 C:\Users\tohid\Source\Repos\AnbarBankManagment\AnbarBankManagment\bin\Debug\Utilities.dll
 C:\Users\tohid\Source\Repos\AnbarBankManagment\AnbarBankManagment\bin\Debug\Utilities.pdb
-C:\Users\tohid\Source\Repos\AnbarBankManagment\AnbarBankManagment\bin\Debug\PersianDate.dll
-C:\Users\tohid\Source\Repos\AnbarBankManagment\AnbarBankManagment\bin\Debug\PersianDateControls.dll
-C:\Users\tohid\Source\Repos\AnbarBankManagment\AnbarBankManagment\bin\Debug\wpftoolkit.dll
 C:\Users\tohid\Source\Repos\AnbarBankManagment\AnbarBankManagment\obj\Debug\Repository.g.cs
 C:\Users\tohid\Source\Repos\AnbarBankManagment\AnbarBankManagment\obj\Debug\Repository.baml
+C:\Users\tohid\Source\Repos\AnbarBankManagment\AnbarBankManagment\obj\Debug\ListUser.g.cs
+C:\Users\tohid\Source\Repos\AnbarBankManagment\AnbarBankManagment\obj\Debug\ListUser.baml
+C:\Users\tohid\Source\Repos\AnbarBankManagment\AnbarBankManagment\obj\Debug\AddUser.g.cs
+C:\Users\tohid\Source\Repos\AnbarBankManagment\AnbarBankManagment\obj\Debug\AddUser.baml
+C:\Users\tohid\Source\Repos\AnbarBankManagment\AnbarBankManagment\obj\Debug\AddDeviceType.g.cs
+C:\Users\tohid\Source\Repos\AnbarBankManagment\AnbarBankManagment\obj\Debug\DeviceTypeList.g.cs
+C:\Users\tohid\Source\Repos\AnbarBankManagment\AnbarBankManagment\obj\Debug\AddDeviceType.baml
+C:\Users\tohid\Source\Repos\AnbarBankManagment\AnbarBankManagment\obj\Debug\DeviceTypeList.baml
