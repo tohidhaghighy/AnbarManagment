@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ServiceLayer.Repository;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,20 +20,23 @@ namespace AnbarBankManagment
     /// </summary>
     public partial class DeviceTypeList : Window
     {
+        DeviceTypeRepository _devicetype;
         public DeviceTypeList()
         {
+            _devicetype = new DeviceTypeRepository();
             InitializeComponent();
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
+        private async void Window_Loaded(object sender, RoutedEventArgs e)
         {
-
+            devicetypelist.ItemsSource = await _devicetype.GetAll();
         }
 
 
         private void Btnadddevicetype_MouseDown(object sender, MouseButtonEventArgs e)
         {
-
+            AddDeviceType device = new AddDeviceType();
+            device.ShowDialog();
         }
 
         private void Window_Activated(object sender, EventArgs e)

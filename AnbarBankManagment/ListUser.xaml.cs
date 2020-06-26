@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ServiceLayer.Repository;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,13 +20,15 @@ namespace AnbarBankManagment
     /// </summary>
     public partial class ListUser : Window
     {
+        UserRepository _user;
         public ListUser()
         {
+            _user = new UserRepository();
             InitializeComponent();
         }
-        private void Window_Loaded(object sender, RoutedEventArgs e)
+        private async void Window_Loaded(object sender, RoutedEventArgs e)
         {
-
+            userlist.ItemsSource = await _user.GetAll();
         }
 
         private void Window_Activated(object sender, EventArgs e)
@@ -44,6 +47,12 @@ namespace AnbarBankManagment
         private void Header_MouseDown(object sender, MouseButtonEventArgs e)
         {
             this.DragMove();
+        }
+
+        private void Btnadduser_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            AddUser user = new AddUser();
+            user.ShowDialog();
         }
     }
 }

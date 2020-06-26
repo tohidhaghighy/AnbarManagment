@@ -10,8 +10,11 @@ namespace DomainLayer
     public class DeviceType
     {
         [Key]
+        [Display(Name ="شماره")]
         public int Id { get; set; }
+
         [MaxLength(50)]
+        [Display(Name = "نام")]
         public string Name { get; set; }
 
         public ICollection<Equipment> Equipments { get; set; }

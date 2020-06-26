@@ -37,7 +37,7 @@
         <Image Name="btnback" HorizontalAlignment="Left" Height="11" Cursor="Hand" Source="img/closeicon.png" Opacity="0.5" Margin="53,30,0,0" VerticalAlignment="Top" Width="13" MouseDown="Back_MouseDown"/>
         <Label Content="افزودن نوع دستگاه" HorizontalAlignment="Left" Margin="283,20,0,0" VerticalAlignment="Top" FontFamily="B Nazanin" FontSize="14" FontWeight="Bold"/>
         <Rectangle Fill="#FFF4F4F4" HorizontalAlignment="Left" Height="56" Margin="9,211,0,0" RadiusY="10" RadiusX="10" Stroke="#FFC2C2C2" VerticalAlignment="Top" Width="450" MouseDown="Header_MouseDown" />
-        <Button Name="btnadddevice" Content="ثبت" IsDefault="True" TabIndex="4" HorizontalAlignment="Left" Margin="345,229,0,0" VerticalAlignment="Top" Width="75" Height="25" Background="#FFC0C02D" Foreground="White" Click="Btnadddevice_Click"/>
+        <Button Name="btnadddevicetype" Content="ثبت" IsDefault="True" TabIndex="4" HorizontalAlignment="Left" Margin="345,229,0,0" VerticalAlignment="Top" Width="75" Height="25" Background="#FFC0C02D" Foreground="White" Click="Btnadddevicetype_Click"/>
         <Button Content="انصراف" IsCancel="True" TabIndex="5" HorizontalAlignment="Left" Margin="265,229,0,0" VerticalAlignment="Top" Width="75" Height="25"/>
         <Label Content=" نوع دستکاه *" HorizontalAlignment="Left" FlowDirection="RightToLeft" Margin="330,84,0,0" VerticalAlignment="Top" FontFamily="B Nazanin" FontSize="14" FontWeight="Bold"/>
         <TextBox HorizontalAlignment="Left" TextAlignment="Center" Name="txtname" TabIndex="0" FlowDirection="RightToLeft" Height="23" Margin="119,86,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="156"/>

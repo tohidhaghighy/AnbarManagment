@@ -117,7 +117,7 @@ namespace AnbarBankManagment
 
         private void Devicetypelist_Click(object sender, RoutedEventArgs e)
         {
-            AddDeviceType device = new AddDeviceType();
+            DeviceTypeList device = new DeviceTypeList();
             device.ShowDialog();
         }
     }

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DomainLayer;
+using ServiceLayer.Repository;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,8 +21,10 @@ namespace AnbarBankManagment
     /// </summary>
     public partial class AddUser : Window
     {
+        UserRepository _user;
         public AddUser()
         {
+            _user = new UserRepository();
             InitializeComponent();
         }
 
@@ -49,14 +53,23 @@ namespace AnbarBankManagment
 
         private void Btnback_MouseDown(object sender, MouseButtonEventArgs e)
         {
-
+            this.Close();
         }
 
-        private async void Btnadddevice_Click(object sender, RoutedEventArgs e)
+        private async void Btnadduser_Click(object sender, RoutedEventArgs e)
         {
             if (txtname.Text != "" && txtusername.Text != "" && txtpassword.Text != "")
             {
-                
+                if (await _user.Add(new User() {
+                    Name=txtname.Text,
+                    Password=txtpassword.Text,
+                    Username=txtusername.Text,
+                    UserRoll= Roll.User
+                }))
+                {
+                    MessageBox.Show("با موفقیت ثبت شد");
+                    this.Close();
+                }
             }
             else
             {

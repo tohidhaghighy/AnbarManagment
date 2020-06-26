@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DomainLayer;
+using ServiceLayer.Repository;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,8 +21,10 @@ namespace AnbarBankManagment
     /// </summary>
     public partial class AddDeviceType : Window
     {
+        DeviceTypeRepository _devicetype;
         public AddDeviceType()
         {
+            _devicetype = new DeviceTypeRepository();
             InitializeComponent();
         }
 
@@ -49,14 +53,20 @@ namespace AnbarBankManagment
 
         private void Btnback_MouseDown(object sender, MouseButtonEventArgs e)
         {
-
+            this.Close();
         }
 
-        private async void Btnadddevice_Click(object sender, RoutedEventArgs e)
+        private async void Btnadddevicetype_Click(object sender, RoutedEventArgs e)
         {
             if (txtname.Text != "")
             {
-
+                if (await _devicetype.Add(new DeviceType() {
+                    Name=txtname.Text
+                }))
+                {
+                    MessageBox.Show("با موفقیت ثبت شد");
+                    this.Close();
+                }
             }
             else
             {

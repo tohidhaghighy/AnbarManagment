@@ -54,7 +54,7 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Rectangle HorizontalAlignment="Left" Cursor="Hand" Height="35" Margin="608,104,0,0" Stroke="#FFB7B7B7" VerticalAlignment="Top" Width="100">
+        <Rectangle Name="btnadduser" HorizontalAlignment="Left" Cursor="Hand" Height="35" Margin="608,104,0,0" Stroke="#FFB7B7B7" VerticalAlignment="Top" Width="100" MouseDown="Btnadduser_MouseDown">
             <Rectangle.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FFEFEFEF" Offset="1"/>
@@ -67,7 +67,7 @@
         <Label Content=" : تعداد کاربر ها  " HorizontalAlignment="Left" Margin="401,61,0,0" VerticalAlignment="Top"/>
         <Label Content="120000  " HorizontalAlignment="Left" Margin="351,62,0,0" VerticalAlignment="Top"/>
 
-        <DataGrid HorizontalAlignment="Left" Height="333" Margin="24,144,0,0" VerticalAlignment="Top" Width="753">
+        <DataGrid Name="userlist" HorizontalAlignment="Left" FlowDirection="RightToLeft" Height="333" Margin="24,144,0,0" VerticalAlignment="Top" Width="753">
             <DataGrid.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FFE6EEE3" Offset="0"/>
@@ -75,6 +75,12 @@
                     <GradientStop Color="#99C7FBB7" Offset="0.909"/>
                 </LinearGradientBrush>
             </DataGrid.Background>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="شماره" Binding="{Binding Id}" Width="100" />
+                <DataGridTextColumn Header="نام" Binding="{Binding Name}" Width="200" />
+                <DataGridTextColumn Header="نام کاربری" Binding="{Binding Username}" Width="200" />
+                <DataGridTextColumn Header="پسورد" Binding="{Binding Password}" Width="200" />
+            </DataGrid.Columns>
         </DataGrid>
 
 
